@@ -3,8 +3,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <>
-
-      <h1>Home Page</h1>
+      <h2>Home Page</h2>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit error aliquid sint iste quos omnis molestiae ipsum, quod ut ullam!</p>
         <ul>
            {/*  <li><Link href={'/'}>Home</Link></li>

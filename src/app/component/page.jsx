@@ -1,3 +1,4 @@
+'use client'
 import React from 'react'
 
 
@@ -7,7 +8,7 @@ const handleEvent=() => {
 
 function Button() {
   return (
-  <button onClick={handleEvent}></button>
+  <button onClick={handleEvent}>Click Here</button>
   )
 }
 

@@ -13,15 +13,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-      <div>
-        <div className="row">
-          <h1>Global Header</h1>
+        <div>
+{/*           <div className="row">
+            <h1>Global Header</h1>
+          </div> */}
+          {children}
+          {/* <div className="row">
+            <h1>Global Footer</h1>
+          </div> */}
         </div>
-        {children}
-        <div className="row">
-          <h1>Global Footer</h1>
-        </div>
-      </div>
       </body>
     </html>
   );

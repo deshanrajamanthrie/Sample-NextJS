@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import {Inter } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter =Inter({ subsets: ["latin"] , weight:'variable'});// pass the by default
 
 export const metadata = {
   title: "Mcode",

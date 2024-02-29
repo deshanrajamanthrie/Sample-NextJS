@@ -7,6 +7,10 @@
   background-color:red;
   opacity: 0.2;
 }
+.externalImage{
+  width: 100%;
+ object-fit: cover;
+}
 
 @media (prefers-color-scheme: dark) {
   html {

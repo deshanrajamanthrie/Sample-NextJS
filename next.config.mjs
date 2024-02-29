@@ -7,16 +7,10 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: "https",
-                hostname: "cdn.britannica.com",
-            },
-            {
-                protocol: "https",
-                hostname: "img-cdn.tnwcdn.com",
+                hostname: "**"
             }
-        ]/*  */
-      }
-
-      
+        ]
+      }      
 };
 
 export default nextConfig;

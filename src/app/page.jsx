@@ -8,24 +8,36 @@ export default function Home() {
   const [text, setText] = useState();
 
   const handleAlert = () => {
-    alert(text);
+
+    
   }
+
+  const handleTextField=(event)=>{
+    setText(event.target.value);
+  }
+  
 
 
 
 
   return (
     <>
-
-
       <section className="mainPage">
         <div className="d-flex flex-row" style={{ width: '500px' }}>
-          <input onChange={e => setText(e.target.value)} class="form-control form-control-md mx-2" type="text" placeholder="Type Here" aria-label=".form-control-lg example" />
-          <button onClick={handleAlert} className="btn btn-primary w-25 ">Click</button>
+          <input onChange={handleTextField} class="form-control form-control-md mx-2" type="text" placeholder="Type Here" aria-label=".form-control-lg example" />
+          <button onClick={()=>handleAlert("Hello")} className="btn btn-primary w-25 ">Click</button>
         </div>
         <div className="d-flex mt-3 flex-row align-items-start ">
 
-          <h4>Value Is : Hello</h4>
+          <h6 className="p-5">Value Is :{text} </h6>
+
+          {text=='deshan' && 
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi 
+            vel, quia quos, placeat quibusdam dolore molestiae ducimus recusandae 
+            eius consequatur magnam neque accusamus illo dignissimos cum, asperiores 
+            voluptatem delectus aliquid?</p>
+          }
+        
 
         </div>
 

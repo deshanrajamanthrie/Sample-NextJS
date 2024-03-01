@@ -2,7 +2,9 @@ const Page = () => {
 
     return (
         <>
-            <h1>Service Page</h1>
+            <section className="">
+                <h1>Service Page</h1>
+            </section>
         </>
     );
 

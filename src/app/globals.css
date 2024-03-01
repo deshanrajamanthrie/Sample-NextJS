@@ -1,17 +1,26 @@
 
-.row{
+.headerAndFooter{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
-  background-color:red;
+  background-color:rgb(102, 195, 219);
   opacity: 0.2;
 }
 .externalImage{
   width: 100%;
  object-fit: cover;
 }
-
+.mainPage{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  padding: 30px;
+  width: 100vw;
+  height: 100vh;
+  background-color: antiquewhite;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

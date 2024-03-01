@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css"; // adding the global css to all files
+// adding
 
 const inter = Inter({ subsets: ["latin"], weight: "variable" }); // pass the by default
 
@@ -14,13 +15,13 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div>
-          <div className="row">
+    {/*       <div className="row">
             <h1>Global Header</h1>
-          </div>
+          </div> */}
           {children}
-          <div className="row">
+        {/*   <div className="row">
             <h1>Global Footer</h1>
-          </div>
+          </div> */}
           </div>
       </body>
     </html>
